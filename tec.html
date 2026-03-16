@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NexusAI — Tecnologia & Inteligência Artificial</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<noscript><style>.reveal, .timeline-item { opacity: 1 !important; transform: none !important; }</style></noscript>
+<canvas id="bg-canvas"></canvas>
+<div class="grid-overlay"></div>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">NexusAI</div>
+  <ul class="nav-links">
+    <li><a href="#tecnologias">Tecnologias</a></li>
+    <li><a href="#ia">Inteligência Artificial</a></li>
+    <li><a href="#timeline">Evolução</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+  </ul>
+  <button class="nav-btn">Explorar →</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge"><span class="pulse-dot"></span> Tecnologia do Futuro</div>
+  <h1>
+    O Futuro é<br>
+    <span class="line-em">Inteligente</span>
+  </h1>
+  <p>Explorando a fronteira entre tecnologia e inteligência artificial — onde algoritmos aprendem, sistemas evoluem e o impossível se torna rotina.</p>
+  <div class="hero-btns">
+    <button class="btn-primary" onclick="document.getElementById('tecnologias').scrollIntoView({behavior:'smooth'})">Explorar Tecnologias</button>
+    <button class="btn-ghost" onclick="document.getElementById('ia').scrollIntoView({behavior:'smooth'})">Sobre IA →</button>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+    <span>scroll</span>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat">
+    <div class="stat-num" data-target="2.5">0</div>
+    <div class="stat-label">Bilhões de usuários de IA</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num" data-target="847">0</div>
+    <div class="stat-label">Startups de IA em 2024</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num" data-target="184">0</div>
+    <div class="stat-label">Bilhões investidos (USD)</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num" data-target="95">0</div>
+    <div class="stat-label">% precisão em NLP</div>
+  </div>
+</div>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span>Machine Learning</span><span class="accent">✦</span>
+    <span>Redes Neurais</span><span class="accent">✦</span>
+    <span>Computação Quântica</span><span class="accent">✦</span>
+    <span>Blockchain</span><span class="accent">✦</span>
+    <span>Edge Computing</span><span class="accent">✦</span>
+    <span>IA Generativa</span><span class="accent">✦</span>
+    <span>Computer Vision</span><span class="accent">✦</span>
+    <span>NLP</span><span class="accent">✦</span>
+    <span>Robótica Avançada</span><span class="accent">✦</span>
+    <span>Machine Learning</span><span class="accent">✦</span>
+    <span>Redes Neurais</span><span class="accent">✦</span>
+    <span>Computação Quântica</span><span class="accent">✦</span>
+    <span>Blockchain</span><span class="accent">✦</span>
+    <span>Edge Computing</span><span class="accent">✦</span>
+    <span>IA Generativa</span><span class="accent">✦</span>
+    <span>Computer Vision</span><span class="accent">✦</span>
+    <span>NLP</span><span class="accent">✦</span>
+    <span>Robótica Avançada</span><span class="accent">✦</span>
+  </div>
+</div>
+
+<!-- TECH GRID -->
+<section id="tecnologias">
+  <div class="section-label reveal">Tecnologias em destaque</div>
+  <h2 class="section-title reveal">As Forças que Moldam o Amanhã</h2>
+  <p class="reveal" style="color:var(--muted); max-width:550px; line-height:1.7;">Da nuvem ao quantum, cada tecnologia representa um salto na capacidade humana de criar, processar e transformar informação.</p>
+
+  <div class="tech-grid reveal">
+    <div class="tech-card">
+      <div class="tech-icon">🧠</div>
+      <h3>Inteligência Artificial</h3>
+      <p>Modelos de linguagem de grande escala, redes neurais profundas e sistemas autônomos que aprendem com cada interação.</p>
+      <span class="tech-tag">Fundacional</span>
+    </div>
+    <div class="tech-card">
+      <div class="tech-icon">⚛️</div>
+      <h3>Computação Quântica</h3>
+      <p>Qubits em superposição resolvem problemas NP-completos em minutos — o que levaria milênios com hardware clássico.</p>
+      <span class="tech-tag">Emergente</span>
+    </div>
+    <div class="tech-card">
+      <div class="tech-icon">🌐</div>
+      <h3>Edge Computing</h3>
+      <p>Processamento na borda da rede reduz latência a milissegundos. IoT, veículos autônomos e cidades inteligentes dependem disso.</p>
+      <span class="tech-tag">Infraestrutura</span>
+    </div>
+    <div class="tech-card">
+      <div class="tech-icon">🔗</div>
+      <h3>Blockchain & Web3</h3>
+      <p>Contratos inteligentes, identidade descentralizada e finanças abertas redesenham a confiança na era digital.</p>
+      <span class="tech-tag">Descentralização</span>
+    </div>
+    <div class="tech-card">
+      <div class="tech-icon">👁️</div>
+      <h3>Computer Vision</h3>
+      <p>Diagnóstico médico, manufatura autônoma e realidade aumentada — máquinas que enxergam e interpretam o mundo visual.</p>
+      <span class="tech-tag">Percepção</span>
+    </div>
+    <div class="tech-card">
+      <div class="tech-icon">🤖</div>
+      <h3>Robótica Avançada</h3>
+      <p>Sistemas com percepção tátil, planejamento de trajetória e aprendizado por reforço operam em ambientes não estruturados.</p>
+      <span class="tech-tag">Automação</span>
+    </div>
+  </div>
+</section>
+
+<!-- AI SECTION -->
+<section id="ia" style="background: radial-gradient(ellipse at 80% 50%, rgba(15,92,42,0.08) 0%, transparent 70%);">
+  <div class="ai-section">
+    <div>
+      <div class="section-label reveal">Inteligência Artificial</div>
+      <h2 class="section-title reveal">Como a IA Está Transformando Tudo</h2>
+      <p class="reveal" style="color:var(--muted); line-height:1.7;">Não é apenas automação — é cognição artificial. Sistemas que aprendem, raciocinam e se adaptam em tempo real estão redefinindo cada indústria.</p>
+      <ul class="ai-list reveal">
+        <li>
+          <span class="check">✓</span>
+          <div><strong>Processamento de Linguagem Natural</strong><br><span style="color:var(--muted); font-size:0.88rem;">LLMs como GPT-4, Claude e Gemini compreendem contexto, ironia e intenção com precisão humana.</span></div>
+        </li>
+        <li>
+          <span class="check">✓</span>
+          <div><strong>Aprendizado por Reforço</strong><br><span style="color:var(--muted); font-size:0.88rem;">Agentes treinados em ambientes simulados superam humanos em xadrez, Go e jogos complexos de estratégia.</span></div>
+        </li>
+        <li>
+          <span class="check">✓</span>
+          <div><strong>IA Generativa</strong><br><span style="color:var(--muted); font-size:0.88rem;">Síntese de imagens, vídeos, código e música — criatividade computacional com qualidade profissional.</span></div>
+        </li>
+        <li>
+          <span class="check">✓</span>
+          <div><strong>IA na Saúde</strong><br><span style="color:var(--muted); font-size:0.88rem;">AlphaFold2 resolveu o problema do dobramento de proteínas — 50 anos de biologia em meses de computação.</span></div>
+        </li>
+      </ul>
+    </div>
+    <div class="ai-visual reveal">
+      <div class="ai-ring r1"></div>
+      <div class="ai-ring r2"></div>
+      <div class="ai-ring r3"></div>
+      <div class="ai-core">🧠</div>
+      <!-- Nodes -->
+      <div class="ai-node" style="top:20%; left:70%;"></div>
+      <div class="ai-node" style="top:75%; left:20%;"></div>
+      <div class="ai-node" style="top:15%; left:30%;"></div>
+      <div class="ai-node" style="top:80%; left:75%;"></div>
+      <div class="ai-node" style="top:50%; left:5%;"></div>
+      <div class="ai-node" style="top:45%; left:88%;"></div>
+    </div>
+  </div>
+</section>
+
+<!-- TERMINAL -->
+<section style="padding-top: 2rem;">
+  <div class="section-label reveal">Código do Futuro</div>
+  <h2 class="section-title reveal">IA Que Escreve, Testa e Aprende</h2>
+  <div class="terminal reveal">
+    <div class="terminal-bar">
+      <div class="term-dot" style="background:#ff5f57;"></div>
+      <div class="term-dot" style="background:#ffbd2e;"></div>
+      <div class="term-dot" style="background:#28ca41;"></div>
+      <span style="font-size:0.75rem; color:var(--muted); margin-left:auto;">nexus-ai ~ terminal</span>
+    </div>
+    <div class="terminal-body" id="terminal-body">
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section id="timeline">
+  <div class="section-label reveal">Linha do tempo</div>
+  <h2 class="section-title reveal">A Evolução da Inteligência Artificial</h2>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-year">1950</div>
+      <h4>Teste de Turing</h4>
+      <p>Alan Turing propõe o teste que definiu a inteligência artificial — uma máquina pode ser considerada inteligente se enganar um humano.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-year">1986</div>
+      <h4>Backpropagation</h4>
+      <p>Rumelhart, Hinton e Williams popularizam o algoritmo que treina redes neurais — fundamento de todo deep learning moderno.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-year">2012</div>
+      <h4>AlexNet & Deep Learning</h4>
+      <p>Rede convolucional vence o ImageNet com margem histórica. Início da era moderna de visão computacional.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-year">2017</div>
+      <h4>Attention Is All You Need</h4>
+      <p>O paper da Google que introduziu os Transformers — arquitetura base de GPT, BERT, Claude e todos os LLMs atuais.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-year">2022</div>
+      <h4>ChatGPT & Era Generativa</h4>
+      <p>100 milhões de usuários em 2 meses. IA conversacional de nível profissional chega ao grande público.</p>
+    </div>
+    <div class="timeline-item" style="padding-bottom:0;">
+      <div class="timeline-dot" style="background: var(--metal2); box-shadow: 0 0 16px var(--metal2);"></div>
+      <div class="timeline-year">2024–2026</div>
+      <h4>Agentes Autônomos</h4>
+      <p>IAs que planejam, executam tarefas complexas e colaboram entre si. O início da era dos sistemas multiagente.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CARDS SOBRE -->
+<section id="sobre">
+  <div class="section-label reveal">Impacto global</div>
+  <h2 class="section-title reveal">Setores Sendo Transformados Agora</h2>
+
+  <div class="cards-row">
+    <div class="card-glow reveal">
+      <div class="card-num">01</div>
+      <h3>Saúde & Medicina</h3>
+      <p>Diagnóstico por imagem, descoberta de medicamentos e medicina personalizada baseada em genômica.</p>
+    </div>
+    <div class="card-glow reveal">
+      <div class="card-num">02</div>
+      <h3>Educação</h3>
+      <p>Tutores personalizados que se adaptam ao ritmo de cada aluno. Aprendizado contínuo e sem barreiras geográficas.</p>
+    </div>
+    <div class="card-glow reveal">
+      <div class="card-num">03</div>
+      <h3>Clima & Energia</h3>
+      <p>Modelos climáticos precisos, otimização de redes elétricas e design de novos materiais para energia limpa.</p>
+    </div>
+    <div class="card-glow reveal">
+      <div class="card-num">04</div>
+      <h3>Cibersegurança</h3>
+      <p>Detecção de anomalias em tempo real, análise de comportamento e resposta automatizada a ameaças.</p>
+    </div>
+    <div class="card-glow reveal">
+      <div class="card-num">05</div>
+      <h3>Transporte</h3>
+      <p>Veículos autônomos, drones de entrega e otimização de rotas urbanas reduzem emissões e acidentes.</p>
+    </div>
+    <div class="card-glow reveal">
+      <div class="card-num">06</div>
+      <h3>Ciência & Pesquisa</h3>
+      <p>Aceleração de simulações físicas, análise de dados astronômicos e descoberta de novos compostos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">NexusAI</div>
+  <div class="footer-links">
+    <a href="#">Tecnologias</a>
+    <a href="#">IA</a>
+    <a href="#">Pesquisa</a>
+    <a href="#">Blog</a>
+    <a href="#">Contato</a>
+  </div>
+  <div class="footer-copy">© 2026 NexusAI — Construindo o amanhã, hoje.</div>
+</footer>
+
+<script>
+// Custom cursor
+const cursor = document.getElementById('cursor');
+const ring = document.getElementById('cursorRing');
+let mx = 0, my = 0, rx = 0, ry = 0;
+let cursorSize = 12, ringSize = 36;
+
+document.addEventListener('mousemove', e => {
+  mx = e.clientX; my = e.clientY;
+  cursor.style.transform = `translate(${mx - cursorSize/2}px, ${my - cursorSize/2}px)`;
+});
+
+function animRing() {
+  rx += (mx - rx) * 0.12;
+  ry += (my - ry) * 0.12;
+  ring.style.transform = `translate(${rx - ringSize/2}px, ${ry - ringSize/2}px)`;
+  requestAnimationFrame(animRing);
+}
+animRing();
+
+document.querySelectorAll('button, a').forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    cursorSize = 18; ringSize = 50;
+    cursor.style.width = cursorSize + 'px';
+    cursor.style.height = cursorSize + 'px';
+    ring.style.width = ringSize + 'px'; ring.style.height = ringSize + 'px';
+  });
+  el.addEventListener('mouseleave', () => {
+    cursorSize = 12; ringSize = 36;
+    cursor.style.width = cursorSize + 'px';
+    cursor.style.height = cursorSize + 'px';
+    ring.style.width = ringSize + 'px'; ring.style.height = ringSize + 'px';
+  });
+});
+
+// BG Canvas particles
+const canvas = document.getElementById('bg-canvas');
+const ctx = canvas ? canvas.getContext('2d') : null;
+if (ctx) {
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+const particles = Array.from({length: 80}, () => ({
+  x: Math.random() * canvas.width,
+  y: Math.random() * canvas.height,
+  r: Math.random() * 1.5 + 0.2,
+  vx: (Math.random() - 0.5) * 0.3,
+  vy: (Math.random() - 0.5) * 0.3,
+  a: Math.random() * 0.6 + 0.1
+}));
+
+function drawParticles() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  particles.forEach(p => {
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(80,200,120,${p.a})`;
+    ctx.fill();
+    p.x += p.vx; p.y += p.vy;
+    if (p.x < 0) p.x = canvas.width;
+    if (p.x > canvas.width) p.x = 0;
+    if (p.y < 0) p.y = canvas.height;
+    if (p.y > canvas.height) p.y = 0;
+  });
+
+  // Draw connections
+  particles.forEach((a, i) => {
+    particles.slice(i+1).forEach(b => {
+      const d = Math.hypot(a.x - b.x, a.y - b.y);
+      if (d < 120) {
+        ctx.beginPath();
+        ctx.moveTo(a.x, a.y);
+        ctx.lineTo(b.x, b.y);
+        ctx.strokeStyle = `rgba(80,200,120,${0.08 * (1 - d/120)})`;
+        ctx.lineWidth = 0.5;
+        ctx.stroke();
+      }
+    });
+  });
+
+  requestAnimationFrame(drawParticles);
+}
+drawParticles();
+
+window.addEventListener('resize', () => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  particles.forEach(p => {
+    p.x = Math.min(p.x, canvas.width);
+    p.y = Math.min(p.y, canvas.height);
+  });
+});
+} // end canvas ctx guard
+
+// Scroll reveal
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.reveal, .timeline-item').forEach(el => observer.observe(el));
+
+// Counter animation
+const counters = document.querySelectorAll('.stat-num[data-target]');
+const countObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    const el = e.target;
+    const target = parseFloat(el.dataset.target);
+    const isDecimal = target % 1 !== 0;
+    const frames = 80;
+    let frame = 0;
+    const timer = setInterval(() => {
+      frame++;
+      const progress = frame / frames;
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const current = target * eased;
+      el.textContent = isDecimal ? current.toFixed(1) : Math.floor(current);
+      if (frame >= frames) { el.textContent = isDecimal ? target.toFixed(1) : target; clearInterval(timer); }
+    }, 16);
+    countObserver.unobserve(el);
+  });
+}, { threshold: 0.5 });
+
+counters.forEach(c => countObserver.observe(c));
+
+// Terminal typewriter
+const lines = [
+  { text: '$ nexus train --model gpt-nano --data ./dataset.jsonl', type: 'green', delay: 500 },
+  { text: '→ Carregando 2.4M parâmetros...', type: 'muted', delay: 1200 },
+  { text: '→ Época 1/10 | Loss: 2.847 | Acc: 67.3%', type: 'white', delay: 2000 },
+  { text: '→ Época 5/10 | Loss: 0.923 | Acc: 89.1%', type: 'white', delay: 2800 },
+  { text: '→ Época 10/10 | Loss: 0.312 | Acc: 96.7%', type: 'white', delay: 3600 },
+  { text: '✓ Treinamento concluído em 4m 23s', type: 'green', delay: 4400 },
+  { text: '$ nexus deploy --model gpt-nano --env production', type: 'green', delay: 5200 },
+  { text: '→ Modelo publicado em api.nexus.ai/v1 ✓', type: 'muted', delay: 6000 },
+];
+
+const termBody = document.getElementById('terminal-body');
+
+const termObserver = new IntersectionObserver(entries => {
+  if (!entries[0].isIntersecting) return;
+  termObserver.disconnect();
+
+  lines.forEach(line => {
+    setTimeout(() => {
+      const span = document.createElement('div');
+      span.className = `t-${line.type}`;
+      span.textContent = line.text;
+      termBody.appendChild(span);
+      termBody.scrollTop = termBody.scrollHeight;
+    }, line.delay);
+  });
+
+  setTimeout(() => {
+    const cur = document.createElement('div');
+    cur.innerHTML = '<span class="t-green">$ </span><span class="cursor-blink"></span>';
+    termBody.appendChild(cur);
+  }, 6800);
+}, { threshold: 0.3 });
+
+termObserver.observe(termBody);
+</script>
+
+</body>
+</html>
