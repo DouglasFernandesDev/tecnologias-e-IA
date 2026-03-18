@@ -16,7 +16,7 @@
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
 
-<!-- NAV -->
+
 <nav>
   <div class="logo">NexusAI</div>
   <ul class="nav-links">
@@ -28,7 +28,7 @@
   <button class="nav-btn">Explorar →</button>
 </nav>
 
-<!-- HERO -->
+
 <section class="hero">
   <div class="hero-badge"><span class="pulse-dot"></span> Tecnologia do Futuro</div>
   <h1>
@@ -46,7 +46,7 @@
   </div>
 </section>
 
-<!-- STATS -->
+
 <div class="stats">
   <div class="stat">
     <div class="stat-num" data-target="2.5">0</div>
@@ -66,7 +66,7 @@
   </div>
 </div>
 
-<!-- MARQUEE -->
+
 <div class="marquee-wrap">
   <div class="marquee-track">
     <span>Machine Learning</span><span class="accent">✦</span>
@@ -90,7 +90,7 @@
   </div>
 </div>
 
-<!-- TECH GRID -->
+
 <section id="tecnologias">
   <div class="section-label reveal">Tecnologias em destaque</div>
   <h2 class="section-title reveal">As Forças que Moldam o Amanhã</h2>
@@ -136,7 +136,7 @@
   </div>
 </section>
 
-<!-- AI SECTION -->
+
 <section id="ia" style="background: radial-gradient(ellipse at 80% 50%, rgba(15,92,42,0.08) 0%, transparent 70%);">
   <div class="ai-section">
     <div>
@@ -167,7 +167,7 @@
       <div class="ai-ring r2"></div>
       <div class="ai-ring r3"></div>
       <div class="ai-core">🧠</div>
-      <!-- Nodes -->
+      
       <div class="ai-node" style="top:20%; left:70%;"></div>
       <div class="ai-node" style="top:75%; left:20%;"></div>
       <div class="ai-node" style="top:15%; left:30%;"></div>
@@ -178,7 +178,7 @@
   </div>
 </section>
 
-<!-- TERMINAL -->
+
 <section style="padding-top: 2rem;">
   <div class="section-label reveal">Código do Futuro</div>
   <h2 class="section-title reveal">IA Que Escreve, Testa e Aprende</h2>
@@ -194,7 +194,7 @@
   </div>
 </section>
 
-<!-- TIMELINE -->
+
 <section id="timeline">
   <div class="section-label reveal">Linha do tempo</div>
   <h2 class="section-title reveal">A Evolução da Inteligência Artificial</h2>
@@ -239,7 +239,7 @@
   </div>
 </section>
 
-<!-- CARDS SOBRE -->
+
 <section id="sobre">
   <div class="section-label reveal">Impacto global</div>
   <h2 class="section-title reveal">Setores Sendo Transformados Agora</h2>
@@ -278,7 +278,7 @@
   </div>
 </section>
 
-<!-- FOOTER -->
+
 <footer>
   <div class="footer-logo">NexusAI</div>
   <div class="footer-links">
@@ -292,7 +292,7 @@
 </footer>
 
 <script>
-// Custom cursor
+
 const cursor = document.getElementById('cursor');
 const ring = document.getElementById('cursorRing');
 let mx = 0, my = 0, rx = 0, ry = 0;
@@ -326,7 +326,7 @@ document.querySelectorAll('button, a').forEach(el => {
   });
 });
 
-// BG Canvas particles
+
 const canvas = document.getElementById('bg-canvas');
 const ctx = canvas ? canvas.getContext('2d') : null;
 if (ctx) {
@@ -356,7 +356,7 @@ function drawParticles() {
     if (p.y > canvas.height) p.y = 0;
   });
 
-  // Draw connections
+  
   particles.forEach((a, i) => {
     particles.slice(i+1).forEach(b => {
       const d = Math.hypot(a.x - b.x, a.y - b.y);
@@ -383,16 +383,16 @@ window.addEventListener('resize', () => {
     p.y = Math.min(p.y, canvas.height);
   });
 });
-} // end canvas ctx guard
+} 
 
-// Scroll reveal
+
 const observer = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: 0.1 });
 
 document.querySelectorAll('.reveal, .timeline-item').forEach(el => observer.observe(el));
 
-// Counter animation
+
 const counters = document.querySelectorAll('.stat-num[data-target]');
 const countObserver = new IntersectionObserver(entries => {
   entries.forEach(e => {
@@ -416,7 +416,7 @@ const countObserver = new IntersectionObserver(entries => {
 
 counters.forEach(c => countObserver.observe(c));
 
-// Terminal typewriter
+
 const lines = [
   { text: '$ nexus train --model gpt-nano --data ./dataset.jsonl', type: 'green', delay: 500 },
   { text: '→ Carregando 2.4M parâmetros...', type: 'muted', delay: 1200 },
